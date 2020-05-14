@@ -15,6 +15,27 @@
 <script>
 export default {
     name: 'App',
+    components: {
+
+    },
+    data: {
+        return: {
+
+        }
+    },
+    methods: {
+        getList: function(){
+            axios.get('/list')
+            .then((result) => {
+                console.log(result.data.msg);
+            }).catch((err) => {
+                console.log(err);
+            });
+        }
+    },
+    mounted(){
+        this.getList();
+    }
 }
 </script>
 

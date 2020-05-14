@@ -17,6 +17,8 @@ class ProjectsController extends Controller
 
     public function list(Request $request){
         // return a list of projects. this would be called when App.vue mounts
+
+        return response()->json(['msg' => 'hello sexy world!!!']);
     }
 
 
