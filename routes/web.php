@@ -20,3 +20,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('admin')->middleware('auth:web')->group(function(){
+    Route::post('/make-project', 'ProjectsController@make');
+    Route::post('/delete-project', 'ProjectsController@delete');
+    Route::post('/update-project', 'ProjectsController@update');
+});
+
+Route::get('/list', 'ProjectsController@list');
+
+Route::post('/get', 'ProjectsController@get');
