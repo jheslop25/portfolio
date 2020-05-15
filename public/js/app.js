@@ -1995,8 +1995,7 @@ module.exports = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var particles_js_particles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! particles.js/particles */ "./node_modules/particles.js/particles.js");
 /* harmony import */ var particles_js_particles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(particles_js_particles__WEBPACK_IMPORTED_MODULE_0__);
-//
-//
+/* harmony import */ var _components_reusable_TheNav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/reusable/TheNav */ "./resources/js/components/reusable/TheNav.vue");
 //
 //
 //
@@ -2009,10 +2008,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
-var particlesJS = window.particlesJS;
+ // const particlesJS = window.particlesJS;
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "App",
-  components: {},
+  components: {
+    TheNav: _components_reusable_TheNav__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
   data: function data() {
     return {};
   },
@@ -2070,6 +2072,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _reusable_TheNav_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../reusable/TheNav.vue */ "./resources/js/components/reusable/TheNav.vue");
 //
 //
 //
@@ -2078,8 +2081,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'contact'
+  name: 'contact',
+  components: {
+    TheNav: _reusable_TheNav_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
 });
 
 /***/ }),
@@ -8501,7 +8511,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* ---- reset ---- */\nbody[data-v-f348271a] {\n  margin: 0;\n  font: normal 75% Arial, Helvetica, sans-serif;\n}\ncanvas[data-v-f348271a] {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 90vh;\n} /* ---- particles.js container ---- */\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* ---- reset ---- */\nbody[data-v-f348271a] {\n  margin: 0;\n}\n#particles-js[data-v-f348271a] {\n  margin-top: -20vh;\n  width: 100vw;\n  height: 90vh;\n}\n\n\n", ""]);
 
 // exports
 
@@ -36659,14 +36669,14 @@ return jQuery;
 
 var pJS = function(tag_id, params){
 
-  var canvas_el = document.querySelector('#particles-js');
+  var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
 
   /* particles.js variables with default values */
   this.pJS = {
     canvas: {
       el: canvas_el,
-      w: canvas_el.offsetWidth,
-      h: canvas_el.offsetHeight
+      // w: canvas_el.offsetWidth,
+      // h: canvas_el.offsetHeight
     },
     particles: {
       number: {
@@ -41877,14 +41887,19 @@ var render = function() {
   return _c(
     "v-app",
     [
-      _c("v-app-bar", { attrs: { color: "light-blue darken-4", app: "" } }),
+      _c(
+        "v-app-bar",
+        { attrs: { color: "light-blue darken-4", app: "" } },
+        [_c("the-nav")],
+        1
+      ),
       _vm._v(" "),
       _c(
         "v-content",
         [
           _c("router-view"),
           _vm._v(" "),
-          _c("canvas", { attrs: { id: "particles-js" } })
+          _c("div", { attrs: { id: "particles-js" } })
         ],
         1
       ),
@@ -41935,7 +41950,7 @@ var render = function() {
                   _c("v-icon", { attrs: { left: "" } }, [
                     _vm._v("mdi-card-account-phone-outline")
                   ]),
-                  _vm._v("  Contact")
+                  _vm._v("Contact")
                 ],
                 1
               )
@@ -41997,7 +42012,11 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-row",
-    [_c("v-col", [_c("v-card-title", [_vm._v("hello contact")])], 1)],
+    [
+      _c("v-col", [_c("v-card-title", [_vm._v("hello contact")])], 1),
+      _vm._v(" "),
+      _c("v-col", [_c("the-nav")], 1)
+    ],
     1
   )
 }
