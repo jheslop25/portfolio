@@ -1,28 +1,29 @@
 <template>
-  <v-row>
-    <v-col>
-      <v-card>
-        <v-card-title>hello world</v-card-title>
-      </v-card>
-    </v-col>
-  </v-row>
+  <div id="content">
+    <v-row align="center" justify="center">
+      <v-col md="5">
+        <p class="h1">John Heslop</p>
+        <p class="h4">Full-Stack Web Developer</p>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
-//import particlesJS from "particles.js";
-
 export default {
   name: "home",
   methods: {},
   data() {
     return {};
   },
-  mounted() {
-    particlesJS.load("particles-js", 'js/particles.json', function() {
-      console.log("callback - particles-js config loaded");
-    });
-  }
+  mounted() {}
 };
 </script>
 <style scoped>
+#content {
+  position: relative;
+  top: 35vh;
+  left: 5vw;
+}
+
 </style>

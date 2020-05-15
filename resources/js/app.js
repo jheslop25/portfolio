@@ -7,6 +7,7 @@ import router from './router.js';
 import App from './App.vue';
 import '@mdi/font/css/materialdesignicons.css'
 
+
 Vue.use(Vuetify);
 
 

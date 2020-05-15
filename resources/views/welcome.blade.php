@@ -18,8 +18,6 @@
     <div id="app">
         <app></app>
     </div>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 </body>
 
 </html>

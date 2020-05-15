@@ -1,16 +1,18 @@
 <template>
   <v-app>
-    <v-app-bar color="primary" app></v-app-bar>
+    <v-app-bar color="light-blue darken-4" app></v-app-bar>
     <v-content>
       <v-container fluid id="particles-js">
         <router-view></router-view>
       </v-container>
     </v-content>
-    <v-footer color="primary"></v-footer>
+    <v-footer color="light-blue darken-4" app></v-footer>
   </v-app>
 </template>
 
 <script>
+import 'particles.js/particles';
+const particlesJS = window.particlesJS;
 export default {
   name: "App",
   components: {},
@@ -31,59 +33,12 @@ export default {
   },
   mounted() {
     this.getList();
+    particlesJS.load("particles-js", "/js/particles.json", function() {
+      console.log("callback - particles-js config loaded");
+    });
   }
 };
 </script>
 
 <style scoped>
-/* ---- reset ---- */
-body {
-  margin: 0;
-  font: normal 75% Arial, Helvetica, sans-serif;
-}
-canvas {
-  display: block;
-  vertical-align: bottom;
-} /* ---- particles.js container ---- */
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #283593;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-} /* ---- stats.js ---- */
-.count-particles {
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13e8e9;
-  font-size: 0.8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-.js-count-particles {
-  font-size: 1.1em;
-}
-#stats,
-.count-particles {
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-#stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-.count-particles {
-  border-radius: 0 0 3px 3px;
-}
 </style>

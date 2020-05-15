@@ -8,7 +8,7 @@
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#CDCDCD"
       },
       "shape": {
         "type": "circle",
@@ -20,13 +20,13 @@
           "nb_sides": 5
         },
         "image": {
-          "src": "img/github.svg",
+          "src": "/photos/stars2.jpg",
           "width": 100,
           "height": 100
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0.75,
         "random": false,
         "anim": {
           "enable": false,
@@ -48,7 +48,7 @@
       "line_linked": {
         "enable": true,
         "distance": 300,
-        "color": "#ffffff",
+        "color": "#CDCDCD",
         "opacity": 0.4,
         "width": 1
       },
