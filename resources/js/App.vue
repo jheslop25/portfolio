@@ -2,16 +2,17 @@
   <v-app>
     <v-app-bar color="light-blue darken-4" app></v-app-bar>
     <v-content>
-      <v-container fluid id="particles-js">
+    
         <router-view></router-view>
-      </v-container>
+        <canvas id="particles-js"></canvas>
+      
     </v-content>
-    <v-footer color="light-blue darken-4" app></v-footer>
+    <v-footer class="p-3" color="light-blue darken-4" app></v-footer>
   </v-app>
 </template>
 
 <script>
-import 'particles.js/particles';
+import "particles.js/particles";
 const particlesJS = window.particlesJS;
 export default {
   name: "App",
@@ -41,4 +42,18 @@ export default {
 </script>
 
 <style scoped>
+/* ---- reset ---- */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 90vh;
+} /* ---- particles.js container ---- */
+
+
 </style>
