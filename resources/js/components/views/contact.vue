@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center">
     <v-col sm="5" md="5">
-      <v-card class="m-3">
+      <v-card class="mt-12 ms-3">
         <v-card-title>Contact Me</v-card-title>
         <v-card-text>
           Have a question or want to work together?

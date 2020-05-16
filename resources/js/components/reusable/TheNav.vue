@@ -5,7 +5,7 @@
             <router-link :to="{ name: 'home'}"><v-btn text color="light-blue lighten-5"><v-icon left>mdi-home-outline</v-icon>Home</v-btn></router-link>
         </v-col>
         <v-col sm="2" md="1">
-            <router-link :to="{ name: 'home'}"><v-btn text @click="showContact" color="light-blue lighten-5"><v-icon left>mdi-card-account-phone-outline</v-icon>Contact</v-btn></router-link>
+            <router-link :to="{ name: 'contact'}"><v-btn text color="light-blue lighten-5"><v-icon left>mdi-card-account-phone-outline</v-icon>Contact</v-btn></router-link>
         </v-col>
         <v-col sm="2" md="1">
             <router-link :to="{ name: 'work'}"><v-btn text color="light-blue lighten-5"><v-icon left>mdi-account-hard-hat</v-icon>Work</v-btn></router-link>
