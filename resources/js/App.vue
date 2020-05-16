@@ -2,24 +2,27 @@
   <v-app>
     <v-app-bar color="light-blue darken-3" app><the-nav class="d-none d-sm-flex"></the-nav><the-mobile-nav class="d-sm-none d-flex"></the-mobile-nav></v-app-bar>
     <v-content>
+      <v-container fluid>
+        
         <router-view></router-view>
         <div id="particles-js"></div>
+      </v-container>
     </v-content>
-    <v-footer class="p-4" color="light-blue darken-3" ></v-footer>
+    <v-footer class="p-4" color="light-blue darken-3"></v-footer>
   </v-app>
 </template>
 
 <script>
 import "particles.js/particles";
-import TheNav from './components/reusable/TheNav';
-import TheMobileNav from './components/reusable/TheMobileNav.vue';
+import TheNav from "./components/reusable/TheNav";
+import TheMobileNav from "./components/reusable/TheMobileNav.vue";
 
 // const particlesJS = window.particlesJS;
 export default {
   name: "App",
   components: {
-      TheNav,
-      TheMobileNav
+    TheNav,
+    TheMobileNav
   },
   data: function() {
     return {};
@@ -49,16 +52,15 @@ export default {
 /* ---- reset ---- */
 body {
   margin: 0;
-  
 }
 #particles-js {
   margin-top: -40vh;
-  width: 100vw;
+  margin-left: -5vw;
+  margin-bottom: -5vh;
+  width: 105vw;
   height: 120vh;
-  background-color: #E1F5FE;
+  background-color: #e1f5fe;
   background-position: center;
   background-size: cover;
 }
-
-
 </style>

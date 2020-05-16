@@ -5,7 +5,7 @@
           <router-link :to="{ name: 'home'}"><v-icon color="light-blue lighten-5" x-large>mdi-home-outline</v-icon></router-link>
       </v-col>
       <v-col>
-          <router-link :to="{ name: 'contact'}"><v-icon color="light-blue lighten-5" x-large>mdi-card-account-phone-outline</v-icon></router-link>
+          <v-icon  @click="showContact" color="light-blue lighten-5" x-large>mdi-card-account-phone-outline</v-icon>
       </v-col>
       <v-col>
           <router-link :to="{ name: 'work'}"><v-icon color="light-blue lighten-5" x-large>mdi-account-hard-hat</v-icon></router-link>
@@ -17,6 +17,11 @@
 <script>
 export default {
     name: 'TheMobileNav',
+    methods: {
+    showContact() {
+      this.$root.$emit("showContact");
+    }
+  }
 }
 </script>
 
