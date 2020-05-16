@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar color="light-blue darken-3" app><the-nav class="d-none d-sm-flex"></the-nav></v-app-bar>
+    <v-app-bar color="light-blue darken-3" app><the-nav class="d-none d-sm-flex"></the-nav><the-mobile-nav class="d-sm-none d-flex"></the-mobile-nav></v-app-bar>
     <v-content>
         <router-view></router-view>
         <div id="particles-js"></div>
@@ -12,12 +12,14 @@
 <script>
 import "particles.js/particles";
 import TheNav from './components/reusable/TheNav';
+import TheMobileNav from './components/reusable/TheMobileNav.vue';
 
 // const particlesJS = window.particlesJS;
 export default {
   name: "App",
   components: {
-      TheNav
+      TheNav,
+      TheMobileNav
   },
   data: function() {
     return {};

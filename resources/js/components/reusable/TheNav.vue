@@ -1,6 +1,6 @@
 <template>
 
-    <v-row class="d-none d-sm-flex">
+    <v-row >
       <v-spacer></v-spacer>
       <v-col sm="2" md="1">
         <router-link :to="{ name: 'home'}">
