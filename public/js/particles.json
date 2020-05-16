@@ -8,7 +8,7 @@
         }
       },
       "color": {
-        "value": "#CDCDCD"
+        "value": "#81D4FA"
       },
       "shape": {
         "type": "circle",
@@ -48,8 +48,8 @@
       "line_linked": {
         "enable": true,
         "distance": 300,
-        "color": "#CDCDCD",
-        "opacity": 0.4,
+        "color": "#B3E5FC",
+        "opacity": 0.9,
         "width": 1
       },
       "move": {
@@ -75,7 +75,7 @@
           "mode": "repulse"
         },
         "onclick": {
-          "enable": false,
+          "enable": true,
           "mode": "push"
         },
         "resize": true

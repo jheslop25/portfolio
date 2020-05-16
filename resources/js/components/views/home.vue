@@ -1,12 +1,13 @@
 <template>
   <div id="content">
     <v-row align="center" justify="center">
-      <v-col md="5">
+      <v-col sm="5" md="5">
         <p class="h1">John Heslop</p>
-        <p class="h4">Full-Stack Web Developer</p>
+        <p class="h3">Full-Stack Web Developer</p>
+         <the-cta></the-cta>
       </v-col>
-      <v-col md="3">
-        <the-nav></the-nav>
+      <v-col sm="4" md="3">
+       
       </v-col>
     </v-row>
   </div>
@@ -14,7 +15,7 @@
 
 <script>
 
-import TheNav from '../reusable/TheNav';
+import TheCta from '../reusable/TheCta';
 
 export default {
   name: "home",
@@ -24,7 +25,7 @@ export default {
   },
   mounted() {},
   components: {
-    TheNav
+    TheCta
   }
 };
 </script>
