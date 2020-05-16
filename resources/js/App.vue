@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar color="light-blue darken-3" app><the-nav></the-nav></v-app-bar>
+    <v-app-bar color="light-blue darken-3" app><the-nav class="d-none d-sm-flex"></the-nav></v-app-bar>
     <v-content>
         <router-view></router-view>
         <div id="particles-js"></div>
