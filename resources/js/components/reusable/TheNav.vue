@@ -10,11 +10,11 @@
         </router-link>
       </v-col>
       <v-col sm="2" md="1">
-       
+        <router-link :to="{ name: 'home'}">
           <v-btn @click="showContact" text color="light-blue lighten-5">
             <v-icon left>mdi-card-account-phone-outline</v-icon>Contact
           </v-btn>
-        
+        </router-link>
       </v-col>
       <v-col sm="2" md="1">
         <router-link :to="{ name: 'work'}">
@@ -32,7 +32,9 @@ export default {
   name: "TheNav",
   methods: {
     showContact() {
-      this.$root.$emit("showContact");
+      setTimeout( ()=>{
+        this.$root.$emit("showContact");
+      }, 500);
     }
   }
 };
