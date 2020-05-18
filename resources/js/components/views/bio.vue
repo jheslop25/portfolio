@@ -2,13 +2,19 @@
   <v-row justify="center">
     <v-col md="10">
       <v-card>
-        <v-row justify="center">
-          <v-img class="rounded" max-width="290px" max-height="350px" src="/photos/me.png"></v-img>
+        <v-row justify="center" align="center">
+          <v-col md="4">
+            <v-img class="rounded" max-width="400px" max-height="400px" src="/photos/me.png"></v-img>
+          </v-col>
           <v-col md="6">
             <p class="h1 p-2">About Me</p>
             <p
               class="h5 p-2"
             >Hi! I’m John, a full-stack web developer based in Calgary, AB, Canada. When I’m not hammering away on a keyboard you can probably find me either growing or cooking food and maybe watching the occasional show on Netflix (I have even been known to ‘chill’).</p>
+            <p class="h2 p-2">My Objective</p>
+            <p
+              class="h5 ps-2"
+            >I am looking to work with great people and great companies that emphasize forward-thinking and technical excellence.</p>
             <p class="h2 p-2">My Skills</p>
             <p class="h5 ps-2">Languages: PHP, JavaScript, HTML, SASS, CSS</p>
             <p class="h5 ps-2">Frameworks: Laravel, Vue.js</p>
@@ -22,7 +28,7 @@
             <p class="h5 ps-2">Languages: PHP, JavaScript, HTML, SASS, CSS</p>
             <p class="h5 ps-2">Frameworks: Laravel, Vue.js</p>
           </v-col>
-        </v-row> -->
+        </v-row>-->
       </v-card>
     </v-col>
     <v-overlay dark="false" opacity="0.6" :value="overlay">
