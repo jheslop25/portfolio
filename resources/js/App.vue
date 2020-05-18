@@ -61,7 +61,7 @@ body {
   margin-left: -5vw;
   margin-bottom: -5vh;
   width: 105vw;
-  height: 300vh;
+  height: 230vh;
   background-color: #e1f5fe;
   background-position: center;
   background-size: cover;
