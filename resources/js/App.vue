@@ -32,7 +32,10 @@ export default {
       axios
         .get("/list")
         .then(result => {
-          console.log(result.data.msg);
+          // console.log(result.data.msg);
+          // console.log(result.data.list);
+          this.$store.state.list = result.data.list;
+          console.log(this.$store.state.list);
         })
         .catch(err => {
           console.log(err);
