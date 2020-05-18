@@ -20,19 +20,10 @@
             <p class="h5 ps-2">Frameworks: Laravel, Vue.js</p>
           </v-col>
         </v-row>
-        <!-- <v-row justify="center" align="center">
-          <v-col md="4">
-            <p class="h2 p-2">My Skills</p>
-          </v-col>
-          <v-col md="5">
-            <p class="h5 ps-2">Languages: PHP, JavaScript, HTML, SASS, CSS</p>
-            <p class="h5 ps-2">Frameworks: Laravel, Vue.js</p>
-          </v-col>
-        </v-row>-->
       </v-card>
     </v-col>
     <v-overlay dark="false" opacity="0.6" :value="overlay">
-      <v-card max-width="400px" class="m-3">
+      <v-card max-width="500px" class="m-3">
         <v-card-title>Contact Me</v-card-title>
         <v-card-text>
           Have a question or want to work together?
@@ -44,6 +35,9 @@
           </v-btn>
           <v-btn href="tel:4038182749" color="light-green darken-1" text>
             <v-icon left>mdi-phone</v-icon>Phone
+          </v-btn>
+          <v-btn href="https://www.linkedin.com/in/john-heslop-49ab57a4/" color="light-green darken-1" text>
+            <v-icon >mdi-linkedin</v-icon>Linkedin
           </v-btn>
           <v-btn text @click="overlay = false" color="light-blue darken-1">
             <v-icon left>mdi-close</v-icon>Close
