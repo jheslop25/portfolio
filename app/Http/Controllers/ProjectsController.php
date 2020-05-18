@@ -13,6 +13,11 @@ class ProjectsController extends Controller
 
     public function get(Request $request){
         //get a project by name. this would be called when work.vue asks for a project
+        $project = Project::find($request->input);
+
+        $posts = $project->posts;
+
+        return response()->json(['msg' => 'it worked', 'project' => $project, 'posts' => $posts], 200);
     }
 
     public function list(Request $request){

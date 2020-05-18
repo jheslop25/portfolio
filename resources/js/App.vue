@@ -57,7 +57,7 @@ body {
   margin: 0;
 }
 #particles-js {
-  margin-top: -150vh;
+  margin-top: -170vh;
   margin-left: -5vw;
   margin-bottom: -5vh;
   width: 105vw;
