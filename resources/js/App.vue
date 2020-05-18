@@ -57,11 +57,11 @@ body {
   margin: 0;
 }
 #particles-js {
-  margin-top: -90vh;
+  margin-top: -150vh;
   margin-left: -5vw;
   margin-bottom: -5vh;
   width: 105vw;
-  height: 200vh;
+  height: 300vh;
   background-color: #e1f5fe;
   background-position: center;
   background-size: cover;

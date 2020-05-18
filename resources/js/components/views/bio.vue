@@ -1,17 +1,17 @@
 <template>
   <v-row justify="center">
-      <v-col md="8">
-          <p>hello bio</p>
-      </v-col>
+    <v-img max-width="300px" max-height="350px" src="/photos/me.png"></v-img>
+    <v-col md="6">
+      <p class="h1">About Me</p>
+    </v-col>
   </v-row>
 </template>
 
 <script>
 export default {
-    name: 'bio'
-}
+  name: "bio"
+};
 </script>
 
 <style>
-
 </style>
