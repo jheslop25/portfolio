@@ -1,7 +1,7 @@
 <template>
 
     <v-row >
-      <v-spacer></v-spacer>
+     
       <v-col sm="2" md="1">
         <router-link :to="{ name: 'home'}">
           <v-btn text color="light-blue lighten-5">
@@ -20,6 +20,13 @@
         <router-link :to="{ name: 'work'}">
           <v-btn text color="light-blue lighten-5">
             <v-icon left>mdi-account-hard-hat</v-icon>Work
+          </v-btn>
+        </router-link>
+      </v-col>
+      <v-col sm="2" md="1">
+        <router-link :to="{ name: 'bio'}">
+          <v-btn text color="light-blue lighten-5">
+            <v-icon left>mdi-biohazard</v-icon>My Bio
           </v-btn>
         </router-link>
       </v-col>

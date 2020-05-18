@@ -10,6 +10,9 @@
       <v-col>
           <router-link :to="{ name: 'work'}"><v-icon color="light-blue lighten-5" x-large>mdi-account-hard-hat</v-icon></router-link>
       </v-col>
+      <v-col>
+          <router-link :to="{ name: 'bio'}"><v-icon color="light-blue lighten-5" x-large>mdi-biohazard</v-icon></router-link>
+      </v-col>
       <v-spacer></v-spacer>
   </v-row>
 </template>
