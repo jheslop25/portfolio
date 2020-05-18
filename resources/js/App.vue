@@ -48,17 +48,17 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 /* ---- reset ---- */
 body {
   margin: 0;
 }
 #particles-js {
-  margin-top: -40vh;
+  margin-top: -90vh;
   margin-left: -5vw;
   margin-bottom: -5vh;
   width: 105vw;
-  height: 120vh;
+  height: 200vh;
   background-color: #e1f5fe;
   background-position: center;
   background-size: cover;
